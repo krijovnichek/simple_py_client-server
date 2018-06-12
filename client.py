@@ -3,7 +3,7 @@
 import socket
 
 sock = socket.socket()
-sock.connect(('192.168.1.35', 8080))
+sock.connect(('localhost', 8080))
 sock.send('some data'.encode())
 
 data = sock.recv(1024)

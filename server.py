@@ -17,9 +17,8 @@ try:
 			break
 		conn.send(data.upper())
 
-except Exception:
-	print ("Error:" + Exception)
+except Exception as e:
+	print ("Error:" + e)
 
-	
-print("Connect closed")
 conn.close()
+sock.close()

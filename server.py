@@ -18,7 +18,8 @@ try:
 		conn.send(data.upper())
 
 except Exception:
-	print ("Error:" + str(Exception))
+	print ("Error:" + Exception)
+
 	
 print("Connect closed")
 conn.close()

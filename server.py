@@ -16,6 +16,7 @@ try:
 		if not data:
 			break
 		conn.send(data.upper())
+
 except Exception:
 	print ("Error:" + str(Exception))
 	
